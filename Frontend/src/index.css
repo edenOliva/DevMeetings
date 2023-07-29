@@ -1,0 +1,14 @@
+html, body, #root {
+    height: 100%;
+    text-align: center;
+    font-size: x-large;
+    background-color: rgb(135, 185, 144);
+    color: rgb(10, 71, 7);
+}
+
+a {
+    color: rgb(10, 71, 7);
+    margin: 10px;
+    text-decoration: none;
+}
+

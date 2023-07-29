@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "dc53c17d-bde2-4bea-a83f-a580fdc03a1a",
+		"name": "devMeets REST API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all groups",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/groups",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"groups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get meetings by group",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/meetingsByGroup/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"meetingsByGroup",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add meeting",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"groupId\": 1,\r\n        \"start\": \"2023-03-27T15:45:00.000Z\",\r\n        \"end\": \"2023-03-27T16:30:00.000Z\",\r\n        \"description\": \"Choosing colors for valentine's day sales\",\r\n        \"meetingRoom\": \"Blue Room\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/meetings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"meetings"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

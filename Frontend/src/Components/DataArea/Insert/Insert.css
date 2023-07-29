@@ -1,0 +1,24 @@
+.Insert form {
+	border: 1px solid;
+    color: rgb(56, 54, 61);
+    background-image: linear-gradient(45deg, rgb(161, 240, 220), rgb(157, 243, 139));
+    width: 400px;
+    height: 470px;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    display: inline-block;
+    overflow: auto;
+}
+.Insert select, .Insert input, .Insert button, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font-size: x-large;
+    margin-top: 10px;
+}
+
+.Insert label{
+    float: left;
+}
+
